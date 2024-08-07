@@ -4,6 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            font-family: arial, sans-serif;
+            background-color: rgb(183, 121, 121);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+
+        form .form-group {
+            margin-bottom:15px;
+            text-align:left;
+        }
+        form, label {
+            display: block;
+            margin-bottom: 5px;
+        
+        }
+         
+        form input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid rgb(156, 70, 9);
+        }
+
+        form input:focus {
+            border-color: cornflowerblue;
+        }form .form-group {
+            margin-bottom:15px;
+            text-align:left;
+        }
+        form, label {
+            display: block;
+            margin-bottom: 5px;
+        
+        }
+         
+        form input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid rgb(255, 255, 255);
+             }
+
+        form input:invalid:focus {
+            border-color:rgb(255, 255, 255)
+        }
+
+        form input:invalid:focus + .error-message {
+            display:block;
+            color:rgb(255, 255, 255);
+            font-size: 12px;
+            margin-top: 5px;
+        }
+
+
+    </style>
 </head>
 <body>
     <div class="login-container">
